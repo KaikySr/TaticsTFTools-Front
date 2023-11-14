@@ -1,18 +1,15 @@
 import { StyleSheet, View} from 'react-native';
 
-export default function Login() {
+export default function Main() {
     return (
-      <View style={styles.backgroundImage}>
-        <View style={styles.logo}>
+      <View style={styles.screen}>
+        <View style={styles.buttons}>
 
         </View>
-        <View style={styles.inputs}>
+        <View style={styles.comps}>
 
         </View>
-        <View style={styles.start}>
-
-        </View>
-        <View style={styles.create}>
+        <View style={styles.arena}>
 
         </View>
       </View>
@@ -20,7 +17,7 @@ export default function Login() {
   }
 
   const styles = StyleSheet.create({
-    backgroundImage: {
+    screen: {
       flex: 1,
       backgroundColor: '#fff',
       alignItems: 'center',
