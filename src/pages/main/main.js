@@ -1,16 +1,17 @@
 import { StyleSheet, View} from 'react-native';
+import ChampsAndItems from '../../components/ChampsAndItems';
 
 export default function Main() {
     return (
       <View style={styles.screen}>
         <View style={styles.buttons}>
-
+          <ChampsAndItems />
         </View>
         <View style={styles.comps}>
 
         </View>
         <View style={styles.arena}>
-
+            
         </View>
       </View>
     );
