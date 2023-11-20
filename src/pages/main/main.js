@@ -1,17 +1,19 @@
 import { StyleSheet, View} from 'react-native';
 import ChampsAndItems from '../../components/ChampsAndItems';
+import Compositions from '../../components/Compositions';
+import Arena from '../../components/Arena';
 
 export default function Main() {
     return (
       <View style={styles.screen}>
-        <View style={styles.buttons}>
-          <ChampsAndItems />
+        <View>
+          <ChampsAndItems/>
         </View>
-        <View style={styles.comps}>
-
+        <View>
+          <Compositions/>
         </View>
-        <View style={styles.arena}>
-            
+        <View>
+          <Arena/>
         </View>
       </View>
     );
@@ -19,9 +21,9 @@ export default function Main() {
 
   const styles = StyleSheet.create({
     screen: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
+      display: 'flex',
+      flexDirection: 'row',
+      backgroundColor: 'red'
+    }
   });
+
