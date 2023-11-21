@@ -12,8 +12,8 @@ export default function Login() {
           <Image source={Logo} style={styles.img} /> 
         </View>
         <View style={styles.inputs}>
-          <TextInput style={styles.inputLogin} placeholderTextColor={"white"} placeholder={"Username"}/>
-          <TextInput style={styles.inputLogin} secureTextEntry={true} placeholderTextColor={"white"} placeholder={"Password"}/>
+          <TextInput style={styles.inputLogin} placeholderTextColor={"rgba(255, 255, 255, 0.5)"} placeholder={"Username"}/>
+          <TextInput style={styles.inputLogin} secureTextEntry={true} placeholderTextColor={"rgba(255, 255, 255, 0.5)"} placeholder={"Password"}/>
         </View>
         <View style={styles.start}>
           <TouchableOpacity onPress={() => {navigation.navigate("main")}} style={styles.buttonStart}>START</TouchableOpacity>

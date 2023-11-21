@@ -5,6 +5,7 @@ export default function Positions() {
     <View
       style={{
         flex: 1,
+        display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
       }}
@@ -13,188 +14,186 @@ export default function Positions() {
         style={{
           justifyContent: 'center',
           alignItems: 'center',
-          rowGap: 60,
-          columnGap: 15,
-          flexDirection: 'row',
-          flexWrap: 'wrap',
+          rowGap: 30,
+          flexDirection: 'column',
+            marginTop: '10vh'
         }}
       >
-    <View style={styles.row1}>
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+        <View style={styles.row1}>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}/>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
         </View>
-    </View>
-    
-    <View style={styles.row2}>
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+        
+        <View style={styles.row2}>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
         </View>
-    </View>
-       
-    <View style={styles.row1}>
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+        
+        <View style={styles.row1}>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
         </View>
-    </View>
-    
-    <View style={styles.row2}>
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+        
+        <View style={styles.row2}>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
-        </View>
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
 
-        <View style={styles.hexagon}>
-            <View style={styles.hexagonBefore} />
-            <View style={styles.hexagonInner}></View>
-            <View style={styles.hexagonAfter} />
+            <View style={styles.hexagon}>
+                <View style={styles.hexagonBefore} />
+                <View style={styles.hexagonInner}></View>
+                <View style={styles.hexagonAfter} />
+            </View>
         </View>
-    </View>
-    
       </View>
     </View>
   );
@@ -202,21 +201,19 @@ export default function Positions() {
 
 const styles = StyleSheet.create({
     row1: {
-        width: '74vw',
-        marginLeft: '3vw',
         display: 'flex',
         flexDirection: 'row',
         gap: 10,
-        alignItems: 'flex-start'
+        alignItems: 'flex-start',
+        marginLeft: '-5.5vw'
     },
 
     row2: {
-        width: '74vw',
-        marginLeft: '12.5vw',
         display: 'flex',
         flexDirection: 'row',
         gap: 10,
-        alignItems: 'flex-start'
+        alignItems: 'flex-start',
+        marginLeft: '4vw'
     },
 
 

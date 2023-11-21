@@ -4101,10 +4101,10 @@
     "@expo/config" "~8.1.0"
     "uuid" "^3.3.2"
 
-"expo-file-system@~15.4.0", "expo-file-system@~15.4.4":
-  "integrity" "sha512-F0xS88D85F7qVQ61r0qBnzh6VW/s6iIl+VaQEEi2nAIOQHw1JIEj4yCXPLTtbyn5VmArbe2dSL3KYz1V+BLkKA=="
-  "resolved" "https://registry.npmjs.org/expo-file-system/-/expo-file-system-15.4.4.tgz"
-  "version" "15.4.4"
+"expo-file-system@~15.4.0", "expo-file-system@~15.4.5":
+  "integrity" "sha512-xy61KaTaDgXhT/dllwYDHm3ch026EyO8j4eC6wSVr/yE12MMMxAC09yGwy4f7kkOs6ztGVQF5j7ldRzNLN4l0Q=="
+  "resolved" "https://registry.npmjs.org/expo-file-system/-/expo-file-system-15.4.5.tgz"
+  "version" "15.4.5"
   dependencies:
     "uuid" "^3.4.0"
 
@@ -4155,10 +4155,10 @@
   "resolved" "https://registry.npmjs.org/expo-status-bar/-/expo-status-bar-1.6.0.tgz"
   "version" "1.6.0"
 
-"expo@*", "expo@^49.0.19", "expo@^49.0.7":
-  "integrity" "sha512-2Mrup5nqaE4jDCl95Cb2fDNJRjGMgUXRCMEX3k4HyMd9h3x1dFbkR6+hlRT/CSb6PzSQ9bLEsHagm5OIUKZZZw=="
-  "resolved" "https://registry.npmjs.org/expo/-/expo-49.0.19.tgz"
-  "version" "49.0.19"
+"expo@*", "expo@^49.0.20", "expo@^49.0.7":
+  "integrity" "sha512-2j3GjnGlaLqpk7tzCnII9Ywxb64YZSp73n2U7TrZIWFxC5kwPCdejEYSqIYX+5ZzTJ1m8wmi23aB2BrH3Nzmzw=="
+  "resolved" "https://registry.npmjs.org/expo/-/expo-49.0.20.tgz"
+  "version" "49.0.20"
   dependencies:
     "@babel/runtime" "^7.20.0"
     "@expo/cli" "0.10.15"
@@ -4169,7 +4169,7 @@
     "expo-application" "~5.3.0"
     "expo-asset" "~8.10.1"
     "expo-constants" "~14.4.2"
-    "expo-file-system" "~15.4.4"
+    "expo-file-system" "~15.4.5"
     "expo-font" "~11.4.0"
     "expo-keep-awake" "~12.3.0"
     "expo-modules-autolinking" "1.5.1"
@@ -6918,7 +6918,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@*", "prop-types@^15.7.2":
+"prop-types@*", "prop-types@^15.6.2", "prop-types@^15.7.2":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -7075,6 +7075,13 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
   "version" "18.2.0"
 
+"react-native-animatable@1.3.3":
+  "integrity" "sha512-2ckIxZQAsvWn25Ho+DK3d1mXIgj7tITkrS4pYDvx96WyOttSvzzFeQnM2od0+FUMzILbdHDsDEqZvnz1DYNQ1w=="
+  "resolved" "https://registry.npmjs.org/react-native-animatable/-/react-native-animatable-1.3.3.tgz"
+  "version" "1.3.3"
+  dependencies:
+    "prop-types" "^15.7.2"
+
 "react-native-gesture-handler@>= 1.0.0":
   "integrity" "sha512-smpYOVbvWABpq2H+lmDnfOLCTH934aUPO1w2/pQXvm1j+M/vmGQmvgRDJOpXcks17HLtNNKXD6tcODf3aPqDfA=="
   "resolved" "https://registry.npmjs.org/react-native-gesture-handler/-/react-native-gesture-handler-2.13.4.tgz"
@@ -7085,6 +7092,14 @@
     "invariant" "^2.2.4"
     "lodash" "^4.17.21"
     "prop-types" "^15.7.2"
+
+"react-native-modal@^13.0.1":
+  "integrity" "sha512-UB+mjmUtf+miaG/sDhOikRfBOv0gJdBU2ZE1HtFWp6UixW9jCk/bhGdHUgmZljbPpp0RaO/6YiMmQSSK3kkMaw=="
+  "resolved" "https://registry.npmjs.org/react-native-modal/-/react-native-modal-13.0.1.tgz"
+  "version" "13.0.1"
+  dependencies:
+    "prop-types" "^15.6.2"
+    "react-native-animatable" "1.3.3"
 
 "react-native-safe-area-context@^4.7.4", "react-native-safe-area-context@>= 3.0.0":
   "integrity" "sha512-3LR3DCq9pdzlbq6vsHGWBFehXAKDh2Ljug6jWhLWs1QFuJHM6AS2+mH2JfKlB2LqiSFZOBcZfHQFz0sGaA3uqg=="
@@ -7113,7 +7128,7 @@
     "postcss-value-parser" "^4.2.0"
     "styleq" "^0.1.3"
 
-"react-native@*", "react-native@>=0.59", "react-native@0.72.6":
+"react-native@*", "react-native@>=0.59", "react-native@>=0.65.0", "react-native@0.72.6":
   "integrity" "sha512-RafPY2gM7mcrFySS8TL8x+TIO3q7oAlHpzEmC7Im6pmXni6n1AuufGaVh0Narbr1daxstw7yW7T9BKW5dpVc2A=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.72.6.tgz"
   "version" "0.72.6"

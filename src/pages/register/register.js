@@ -9,10 +9,10 @@ export default function Register() {
       <ImageBackground style={styles.backgroundImage} source={imageBack} resizeMode="cover">
         <View style={styles.leftScreen}>
           <View style={styles.inputs}>
-            <TextInput style={styles.inputRegister} placeholderTextColor={"white"} placeholder={"Username"}/>
-            <TextInput style={styles.inputRegister} placeholderTextColor={"white"} placeholder={"Email"}/>
-            <TextInput style={styles.inputRegister} secureTextEntry={true} placeholderTextColor={"white"} placeholder={"Password"}/>
-            <TextInput style={styles.inputRegister} secureTextEntry={true} placeholderTextColor={"white"} placeholder={"Confirm password"}/>
+            <TextInput style={styles.inputRegister} placeholderTextColor={"rgba(255, 255, 255, 0.5)"} placeholder={"Username"}/>
+            <TextInput style={styles.inputRegister} placeholderTextColor={"rgba(255, 255, 255, 0.5)"} placeholder={"Email"}/>
+            <TextInput style={styles.inputRegister} secureTextEntry={true} placeholderTextColor={"rgba(255, 255, 255, 0.5)"} placeholder={"Password"}/>
+            <TextInput style={styles.inputRegister} secureTextEntry={true} placeholderTextColor={"rgba(255, 255, 255, 0.5)"} placeholder={"Confirm password"}/>
           </View>
           <View style={styles.buttons}>
             <TouchableOpacity onPress={() => {navigation.navigate("login")}} style={styles.button}>CREATE</TouchableOpacity>
