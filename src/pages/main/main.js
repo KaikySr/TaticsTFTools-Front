@@ -1,5 +1,5 @@
 import { StyleSheet, View} from 'react-native';
-import ChampsAndItems from '../../components/ChampsAndItems';
+import Browser from '../../components/Browser';
 import Compositions from '../../components/Compositions';
 import Arena from '../../components/Arena';
 
@@ -7,7 +7,7 @@ export default function Main() {
     return (
       <View style={styles.screen}>
         <View>
-          <ChampsAndItems/>
+          <Browser/>
         </View>
         <View>
           <Compositions/>
