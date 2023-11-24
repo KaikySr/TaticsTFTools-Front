@@ -1,67 +1,423 @@
 import React from 'react';
-import { StyleSheet, View, TouchableOpacity, Text } from 'react-native';
+import { StyleSheet, View, TouchableOpacity, Text, Image } from 'react-native';
 import Modal from 'react-native-modal';
 
 export default function Items(props) {
 
-  const items = [{
-    name : 'garra do meu dagrao',
+  const items = [
+  {
+    name : 'garra',
     components: ['xabu', 'capa'],
     desc : 'essa eh a garra do dagrao',
     photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
   },
-  {  name : 'xisde',
+  {  
+    name : 'xisde',
     components: ['xabu', 'capa'],
     desc : 'essa eh a garra do dagrao',
     photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
   },
-  {  name : 'xisde',
+  {
+    name : 'garra',
     components: ['xabu', 'capa'],
     desc : 'essa eh a garra do dagrao',
     photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
   },
-  {  name : 'xisde',
+  {  
+    name : 'xisde',
     components: ['xabu', 'capa'],
     desc : 'essa eh a garra do dagrao',
     photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
   },
-  {  name : 'xisde',
+  { 
+    name : 'banana',
     components: ['xabu', 'capa'],
     desc : 'essa eh a garra do dagrao',
     photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
   },
-  {  name : 'xisde',
+  { 
+    name : 'banana',
     components: ['xabu', 'capa'],
     desc : 'essa eh a garra do dagrao',
     photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
   },
-  {  name : 'xisde',
+  { 
+    name : 'banana',
     components: ['xabu', 'capa'],
     desc : 'essa eh a garra do dagrao',
     photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
   },
-  {  name : 'xisde',
+  { 
+    name : 'banana',
     components: ['xabu', 'capa'],
     desc : 'essa eh a garra do dagrao',
     photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
   },
-  
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  {
+    name : 'garra',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  {  
+    name : 'xisde',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  {
+    name : 'garra',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  {  
+    name : 'xisde',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  {
+    name : 'garra',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  {  
+    name : 'xisde',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  {
+    name : 'garra',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  {  
+    name : 'xisde',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  {
+    name : 'garra',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  {  
+    name : 'xisde',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  {
+    name : 'garra',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  {  
+    name : 'xisde',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  {
+    name : 'garra',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  {  
+    name : 'xisde',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
 ]
 
 const renderItems = () => {
-    return items.map((i, iterator) => mapper(i))
+    return items.map((i) => mapper(i))
   }
 
   const mapper = (item) => {
       return (
         <View style={
           {
-            width: 50,
-            height: 60,
-            backgroundColor: "red",
-          }
-        }>
-          {item.name}
+            width: 45,
+            height: 45,
+            backgroundColor: 'red'
+          }}>
+
+          <Image style={{width: '100%', height: '100%'}} source={{ uri: item.photo }}/>
+
         </View>
       )
   }
@@ -75,7 +431,7 @@ const renderItems = () => {
     style={{ marginLeft: '7vw' }}>
     <View style={styles.modalView}>
       <View style={styles.itemsModal}>
-        <View style={styles.xabu}>
+        <View style={styles.allItems}>
           {renderItems()}
         </View>
       </View>
@@ -101,14 +457,18 @@ const styles = StyleSheet.create({
     width: '95%',
     height: '95%',
     display: 'flex',
+    alignItems:'center',
     flexDirection: 'row',
+    padding: 5
+    
   },
-  xabu: {
-    width: '100%',
-    maxHeight: 'fit-content',
+  allItems: {
+    width: "100%",
+    height: "fit-content",
     gap: 10,
-    flexWrap: 'wrap',
-    backgroundColor : '#00FF00',
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap:"wrap",
     flexDirection: 'row',
   },
   button: {
@@ -129,9 +489,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: '50%'
   },
-  item: {
-    width: 30,
-    height: 30,
-    backgroundColor: 'red'
-  }
 });
