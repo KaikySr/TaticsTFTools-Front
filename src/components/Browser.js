@@ -27,8 +27,8 @@ export default function ChampsAndItems() {
         <TouchableOpacity onPress={handleItemClick} style={isItemsActive ? styles.buttonItemsClicked : styles.buttonItems}><Text style={styles.textBrowser}>I<br />T<br />E<br />M<br/>S</Text></TouchableOpacity>
       </View>
 
-      <Champs modalChampsVisible={isChampsActive} setmodalIsChampsVisible={setIsChampsActive}/>
-      <Items modalItemsVisible={isItemsActive} setmodalIsItemsVisible={setIsItemsActive}/>
+      <Champs modalChampsVisible={isChampsActive} setmodalIsChampsVisible={setIsChampsActive} setItem={setIsItemsActive}/>
+      <Items modalItemsVisible={isItemsActive} setmodalIsItemsVisible={setIsItemsActive} setChamps={setIsChampsActive}/>
     </View>
   );
 }

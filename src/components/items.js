@@ -413,7 +413,11 @@ const renderItems = () => {
           {
             width: 45,
             height: 45,
-            backgroundColor: 'red'
+            backgroundColor: 'red',
+            borderRadius: 5,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
           }}>
 
           <Image style={{width: '100%', height: '100%'}} source={{ uri: item.photo }}/>
@@ -422,8 +426,18 @@ const renderItems = () => {
       )
   }
 
+  const handleBackdrop = (event) => {
+    props.setmodalIsItemsVisible(false)
+    const x = event.clientX
+    const y = event.clientY
+    
+    if (x < 60 && y <= 200)
+      props.setChamps(true)
+  }
+
   return (  
   <Modal
+    onBackdropPress = {handleBackdrop}
     isVisible={props.modalItemsVisible}
     animationIn={'slideInLeft'}
     animationOut={'slideOutLeft'}
@@ -435,7 +449,7 @@ const renderItems = () => {
           {renderItems()}
         </View>
       </View>
-      <View style={styles.button}><TouchableOpacity style={styles.close} onPress={() => props.setmodalIsItemsVisible(!props.modalItemsVisible)}><Text>X</Text></TouchableOpacity></View>
+      <View style={styles.button}><TouchableOpacity style={styles.close} onPress={() => props.setmodalIsItemsVisible(false)}><Text>X</Text></TouchableOpacity></View>
     </View>
   </Modal>
   );
