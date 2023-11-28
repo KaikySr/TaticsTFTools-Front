@@ -12,9 +12,9 @@ export default function App() {
     <Provider store={store}>
       <NavigationContainer>
         <Stack.Navigator>
+          <Stack.Screen options={{headerShown: false}} name="main" component={main} />
           <Stack.Screen options={{headerShown: false}} name="login" component={login} />
           <Stack.Screen options={{headerShown: false}} name="register" component={register} /> 
-          <Stack.Screen options={{headerShown: false}} name="main" component={main} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

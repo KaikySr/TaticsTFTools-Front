@@ -4,6 +4,41 @@ import { StyleSheet, View, Text, Image } from 'react-native';
 
 export default function Compositions() {
 
+  const compositions = [
+  {
+    name : 'Punk',
+    currentQnt: 1,
+    trait1 : 2,
+    trait2 : 4,
+    trait3 : 6,
+    trait4 : null
+  },
+  {
+    name : 'True Damage',
+    currentQnt: 1,
+    trait1 : 2,
+    trait2 : 4,
+    trait3 : 6,
+    trait4 : 9
+  },
+  {
+    name : 'Rapidfire',
+    currentQnt: 1,
+    trait1 : 2,
+    trait2 : 4,
+    trait3 : 6,
+    trait4 : null
+  },
+  {
+    name : 'Edgelord',
+    currentQnt: 1,
+    trait1 : 3,
+    trait2 : 5,
+    trait3 : 7,
+    trait4 : null
+  },
+  ]
+
   return (
       <View>
         <View style={styles.compositions}>
