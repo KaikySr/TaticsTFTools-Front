@@ -401,6 +401,42 @@ export default function Items(props) {
     desc : 'essa eh a garra do dagrao',
     photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
   },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
+  { 
+    name : 'banana',
+    components: ['xabu', 'capa'],
+    desc : 'essa eh a garra do dagrao',
+    photo : 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FXabuSC%2F&psig=AOvVaw0xYbckLntI7dUk3Gf_BaAD&ust=1700851356300000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDdipnj2oIDFQAAAAAdAAAAABAE'
+  },
 ]
 
 const renderItems = () => {
@@ -411,8 +447,8 @@ const renderItems = () => {
       return (
         <View style={
           {
-            width: 45,
-            height: 45,
+            width: 50,
+            height: 50,
             backgroundColor: 'red',
             borderRadius: 5,
             display: 'flex',
@@ -442,14 +478,13 @@ const renderItems = () => {
     animationIn={'slideInLeft'}
     animationOut={'slideOutLeft'}
     backdropOpacity={0}
-    style={{ marginLeft: '7vw' }}>
+    style={{ marginLeft: '6vw' }}>
     <View style={styles.modalView}>
       <View style={styles.itemsModal}>
         <View style={styles.allItems}>
           {renderItems()}
         </View>
       </View>
-      <View style={styles.button}><TouchableOpacity style={styles.close} onPress={() => props.setmodalIsItemsVisible(false)}><Text>X</Text></TouchableOpacity></View>
     </View>
   </Modal>
   );
@@ -467,40 +502,20 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   itemsModal: {
-    backgroundColor: 'white',
-    width: '95%',
-    height: '95%',
+    width: '100%',
+    height: '100%',
     display: 'flex',
     alignItems:'center',
+    padding: 10,
     flexDirection: 'row',
-    padding: 5
-    
   },
   allItems: {
     width: "100%",
     height: "fit-content",
-    gap: 10,
+    gap: 5,
     display: 'flex',
     justifyContent: 'center',
     flexWrap:"wrap",
     flexDirection: 'row',
-  },
-  button: {
-    width: '5%',
-    height: '100%',
-    display: 'flex',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    padding: 5
-  },
-  close: {
-    width: 25,
-    height: 25,
-    backgroundColor: "red",
-    color: "black",
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: '50%'
   },
 });

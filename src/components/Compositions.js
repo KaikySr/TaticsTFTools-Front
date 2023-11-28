@@ -4,9 +4,10 @@ import { StyleSheet, View, Text, Image } from 'react-native';
 
 export default function Compositions() {
 
-  const compositions = [
+  const composition = [
   {
     name : 'Punk',
+    image : "",
     currentQnt: 1,
     trait1 : 2,
     trait2 : 4,
@@ -15,6 +16,7 @@ export default function Compositions() {
   },
   {
     name : 'True Damage',
+    image : "",
     currentQnt: 1,
     trait1 : 2,
     trait2 : 4,
@@ -23,6 +25,7 @@ export default function Compositions() {
   },
   {
     name : 'Rapidfire',
+    image : "",
     currentQnt: 1,
     trait1 : 2,
     trait2 : 4,
@@ -31,6 +34,7 @@ export default function Compositions() {
   },
   {
     name : 'Edgelord',
+    image : "",
     currentQnt: 1,
     trait1 : 3,
     trait2 : 5,
@@ -39,25 +43,30 @@ export default function Compositions() {
   },
   ]
 
+  const renderCompositions = (list) => {
+    return list.map((i) => mapper(i))
+  }
+
+  const mapper = (compositions) => {
+      return (
+        <View style={
+          {
+            display: 'flex',
+            flexDirection: 'row',
+            gap: 6
+          }}>
+            {/* <Image source={composition.image} style={styles.emblem}/>  */}
+            <Text style={styles.infos}>{compositions.currentQnt}/{compositions.trait1}</Text>
+            <Text style={styles.infos}>{compositions.name}</Text>
+        </View>
+      )
+  }
+
   return (
       <View>
         <View style={styles.compositions}>
           <View style={styles.comp}>
-            {/* <Image source={Noxus} style={styles.emblem}/> */}
-            <Text style={styles.infos}>1/3</Text>
-            <Text style={styles.infos}>Noxus</Text>
-          </View>
-
-          <View style={styles.comp}>
-            {/* <Image source={Noxus} style={styles.emblem}/> */}
-            <Text style={styles.infos}>1/3</Text>
-            <Text style={styles.infos}>Demacia</Text>
-          </View>
-
-          <View style={styles.comp}>
-            {/* <Image source={Noxus} style={styles.emblem}/> */}
-            <Text style={styles.infos}>1/2</Text>
-            <Text style={styles.infos}>Shurima</Text>
+            {renderCompositions(composition)}
           </View>
         </View>
       </View>
@@ -76,7 +85,8 @@ export default function Compositions() {
     },
     comp:{
       display: 'flex',
-      flexDirection: 'row',
+      alignItems: 'flex-start',
+      justifyContent: 'center',
       gap: 6
     },
     infos:{

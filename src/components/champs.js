@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, TouchableOpacity, Text, ScrollView } from 'react-native';
+import { StyleSheet, View, Text, ScrollView } from 'react-native';
 import Modal from 'react-native-modal';
 
 export default function Champs(props) {
@@ -776,7 +776,7 @@ export default function Champs(props) {
       animationOut={'slideOutLeft'}
       backdropOpacity={0}
       onBackdropPress = {handleBackdrop}
-      style={{ marginLeft: '7vw' }}>
+      style={{ marginLeft: '6vw' }}>
       
       <View style={styles.modalView}>
         <ScrollView horizontal style={styles.champsModal}> 
@@ -806,7 +806,6 @@ export default function Champs(props) {
             </View>
           </View>
         </ScrollView>
-        <View style={styles.button}><TouchableOpacity style={styles.close} onPress={() => props.setmodalIsChampsVisible(false)}><Text>X</Text></TouchableOpacity></View>
       </View>
     </Modal>
   );
@@ -816,70 +815,43 @@ const styles = StyleSheet.create({
   modalView: {
     width: '80vw',
     height: '100vh',
-    backgroundColor: '#0E2D54',
-    borderTopEndRadius: 15,
-    borderBottomEndRadius: 15,
-    alignItems: 'center',
     display: 'flex',
     flexDirection: 'row',
   },
   champsModal: {
-    width: '95%',
-    height: '95%',
-    display: 'flex',
-    flexDirection: 'row'       
-  },
-  button: {
-    width: '5%',
+    width: '100%',
     height: '100%',
     display: 'flex',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    padding: 5
-  },
-  close: {
-    width: 25,
-    height: 25,
-    backgroundColor: "red",
-    color: "black",
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: '50%'
+    flexDirection: 'row' 
   },
   commomRarity: {
     width: '38vw',
     height: '100%',
     backgroundColor: '#BCBCBC',
-    borderRadius: 15,
     padding: 10,
   },
   rareRarity: {
     width: '38vw',
     height: '100%',
     backgroundColor: '#77DD77',
-    borderRadius: 15,
     padding: 10
   },
   superRareRarity: {
     width: '38vw',
     height: '100%',
     backgroundColor: '#84B6F4',
-    borderRadius: 15,
     padding: 10
   },
   epicRarity: {
     width: '38vw',
     height: '100%',
     backgroundColor: '#711BFC',
-    borderRadius: 15,
     padding: 10
   },
   legendaryRarity: {
     width: '38vw',
     height: '100%',
     backgroundColor: '#EFB810',
-    borderRadius: 15,
     padding: 10
   },
   champs: {
