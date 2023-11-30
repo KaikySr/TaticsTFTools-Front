@@ -2,6 +2,7 @@ import { StyleSheet, View} from 'react-native';
 import Browser from '../../components/Browser';
 import Compositions from '../../components/Compositions';
 import Arena from '../../components/Arena';
+import Account from '../../components/Account';
 
 export default function Main() {
     return (
@@ -15,6 +16,9 @@ export default function Main() {
         <View>
           <Arena/>
         </View>
+        <View>
+          <Account/>
+        </View>
       </View>
     );
   }
@@ -22,8 +26,7 @@ export default function Main() {
   const styles = StyleSheet.create({
     screen: {
       display: 'flex',
-      flexDirection: 'row',
-      backgroundColor: 'red'
+      flexDirection: 'row'
     }
   });
 
