@@ -1,26 +1,34 @@
-import { StyleSheet, View, Text} from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity} from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import { Logout } from '@mui/icons-material';
 import { BorderColor } from '@mui/icons-material';
 import { KeyboardBackspace } from '@mui/icons-material';
-import { useNavigation } from '@react-navigation/native';
+
 
 export default function User() {
   const navigation = useNavigation()
   return (
     <View style={styles.screen}>
       
-      <KeyboardBackspace 
-      onPress={() => {navigation.navigate("main")}}
-      style={
-        {
+      <TouchableOpacity 
+        onPress={() => {navigation.navigate("main")}} 
+        style={{
           width:'50', 
           height:'50', 
-          color:'white',
           position:'absolute',
           left: 0,
           top: 0,
           paddingLeft: 5
-        }}/>
+        }}> 
+        <KeyboardBackspace 
+          style={
+            {
+              width:'50', 
+              height:'50', 
+              color:'white',
+            }}
+        />
+      </TouchableOpacity>
     
       <View style={styles.infos}>
         <View style={styles.username}>
@@ -37,7 +45,24 @@ export default function User() {
         <View style={styles.password}>
           <Text style={styles.textPassword}>Change password</Text>
         </View>
-        <Logout style={styles.svgLogout}/>
+        <TouchableOpacity 
+          onPress={() => {navigation.navigate("login")}}
+          style={{
+            width: 45,
+            height: 45,
+            position: 'absolute',
+            right: 0,
+            bottom: 0,
+        
+          }}>
+            <Logout 
+              style={{
+                color: 'white',
+                width: 45,
+                height: 45,
+              }}
+            />
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -101,14 +126,5 @@ export default function User() {
       alignItems: 'center',
       gap: 5
     },
-    svgLogout: {
-      color: 'white',
-      width: 45,
-      height: 45,
-      position: 'absolute',
-      right: 0,
-      bottom: 0,
-      padding: 10
-    }
   });
 
